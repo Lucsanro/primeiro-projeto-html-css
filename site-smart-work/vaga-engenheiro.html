@@ -1,0 +1,403 @@
+<html> <!-- Vaga de Engenheiro da Equipe SMART WORK; -->
+
+	<head>
+		<title>Smart Work</title>
+		
+		<link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+		
+		<style>
+			/* CSS da página - Estilização */
+			
+			body {
+				margin : 0px ; 
+				background-image:url(fundo/fundo1.jpg) ;
+			}
+			
+				/* CONFIGURAÇÃO DA DIV PRINCIPAL/DIV PAI */
+			
+			#principal {
+				font-family	: Arial ;
+				border 		: 0px ;
+				width 		: 1024px ;
+				height 		: 760px ;
+				margin 		: 0px auto;
+			}
+			
+				/* INICIA-SE AQUI A CONFIGURAÇÃO DO CABEÇALHO */
+			
+			#opcoes { 		
+				list-style 	: none ;
+				padding 	: 0px ;
+				margin 		: 0px;
+				clear 		: both
+			}
+			
+				/* LOGO DO CABEÇALHO */
+			
+			#logo {
+				background:url(fundo/logo2.png) no-repeat ;
+				width  		: 268px ;
+				height 		: 137px ; 
+				float  		: left ;
+				margin 		: 0px;
+			}
+			
+				/* SLOGAN DO CABEÇALHO */
+			
+			#slogan {
+				width  		: 300px ; 
+				height 		: 70px ;
+				color 		: turquoise ;
+				float  		: left ;
+				margin-left	: 40px ;
+				margin-top	: 35px ;
+				text-align	: center;
+				line-height	: 70px;
+				font-family : 'Galada' ;
+				font-size	: 24px ;
+			}
+			
+				/* REDES SOCIAIS DO CABEÇALHO */
+			
+			#sociais {
+				width  		: 230px ; 
+				height 		: 55px ;
+				float  		: right ;
+				margin 		: 0px ;
+				margin-top 	: 10px ;
+				margin-right: 1px ;
+				text-align	: center;
+				line-height	: 40px;
+			}
+			
+			#face {
+				margin-right: 5px ;
+				float 		: left ;
+			}
+			
+			#insta {
+				margin-right: 5px ;
+				float 		: left ;
+			}
+			
+			#twi {
+				margin-left	: -2px ;
+				margin-top	: -1px; 
+				float 		: left ;
+			}
+			
+				/* INICIA-SE AQUI AS CONFIGURAÇÕES GERAIS DO MENU PRINCIPAL DA HOMEPAGE*/
+			
+			#menu li {
+				width  		: 167.5px ; 
+				height 		: 30px ;
+				border 		: 1px solid transparent ;
+				margin-left : 1px ;
+				margin-top 	: 1px ;
+				float 		: left ; 
+				text-align 	: center ;
+				line-height	: 29px;
+				background-color : turquoise ;
+				border-radius : 20px 10px 20px 10px;
+				-moz-border-radius : 20px 10px 20px 10px ;
+				-webkit-border-radius : 20px 10px 20px 10px ;
+				text-shadow : gray 0.5px 0.5px 0.5px ;
+				box-shadow : #008080 0.5px 0.5px 0.5px ;
+			}	
+			
+			#menu {
+				background-color : #000000 ;
+				height 		: 137px ;
+			}
+			
+			#menu a {
+				text-decoration : none ;
+				width  		: 167.5px ; 
+				height 		: 30px ;
+				border-radius : 20px 10px 20px 10px;
+				-moz-border-radius : 20px 10px 20px 10px ;
+				-webkit-border-radius : 20px 10px 20px 10px ;
+				float : left ;
+			}
+			
+			#menu a:link {
+				color : black ;
+				background-color : ;
+			}
+			
+			#menu a:visited {
+				color : #8B0000 ;
+				background-color : ;
+			}
+			
+			#menu a:hover {
+				color : black ;
+				font-size: 18px ;
+				background-color : #48C1CC ;
+			}
+			
+			#menu a:active {
+				color : #00FF7F ;
+				background-color : #006060 ;
+				border : 0px ;
+			}
+			
+				/* ABAIXO ESTÁ A CONFIGURAÇÃO DA DIV REFERENTE AO CONTEÚDO DA PÁGINA */
+			
+			#conteudo {
+				width 		: 1024px ;
+				height		: 720px;
+				margin		: 0px;
+				text-align	: center ;
+				line-height : 240px ; 
+				/* background-color : #957858 ; */
+				background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+				border 		: 0px ;
+			}
+			
+			.btn {
+				font-family	: Arial ;
+				cursor		: pointer ;
+				outline		: none ;
+			}
+			
+			.btn-orange {
+				background	: rgb(245, 79, 22);
+				color 		: white ;
+				box-shadow	: 0 7px 0 rgb(193, 55, 9);
+			}
+			
+			.btn-orange:hover {
+				background	: rgb(193, 55, 9);
+				color 		: white ;
+				box-shadow	: 0 7px 0 rgb(141, 39, 5);
+			}
+			
+			.btn-orange:active {
+				position	: relative ;
+				top			: 5px ;
+				box-shadow	: none ;
+				outline		: none ;
+			}
+			
+			/* CONFIGURAÇÕES REFERENTES A PÁGINA DE DETALHES DA VAGA */
+			
+				/* TÍTULO CENTRAL */
+			
+			#titulo1 {
+				width		: 1024px ;
+				height 		: 30px ;
+				float 		: left ;
+				margin-top 	: 10px ;
+				line-height : 0px; 
+			}
+			
+				/* NOME DO CARGO E EMPRESA */
+			
+			#titulo2 {
+				width 		: 1004px ;
+				height 		: 70px ;
+				float 		: left ;
+				margin-left : 20px ;
+				text-align 	: left ;
+				margin-top 	: 20px ;
+				line-height : 0px; 
+			}
+			
+				/* DESCRIÇÃO DA VAGA - LADO ESQUERDO */
+			
+			#descricao {
+				width 		: 435px ;
+				height 		: 465px ;
+				border 		: 2px solid rgb(245, 79, 22) ;
+				background 	: rgba(0, 0, 0, 0.75);
+				color 		: white ;
+				float 		: left ;
+				margin-top 	: 15px ;
+				margin-left : 15px ;
+				padding-left: 15px ;
+				padding-top : 15px;
+				text-align 	: left ;
+				line-height : 15px ;
+			}
+			
+			#descricao b {
+				text-shadow : 1px 1px 1px black, -1px 1px 1px black,
+				1px -1px 1px black, -1px -1px 1px black ;
+			}
+			
+				/* FOTO, CONTATOS E BOTÃO DE INTERESSE - LADO DIREITO */
+			
+			#foto {
+				/* background-image:url(fundo/engenheiro.jpg); - foto por css */
+				width 		: 300px ;
+				height 		: 300px ;
+				background-color : rgba(87, 212, 167, 0.40);
+				float 		: right ;
+				margin-top 	: 15px ;
+				margin-right: 15px ;				
+			}
+			
+			#contatos {
+				width 		: 300px ;
+				height 		: 72px ;
+				float 		: right ;
+				clear 		: both ;
+				margin-right: 15px ;
+				margin-top 	: -179px;
+				line-height : 25px ;
+				text-align 	: left ;
+				font-size 	: 14px ;
+			}
+			
+			#queroVaga {
+				width 		: 300px ;
+				height 		: 100px ;
+				float 		: right ;
+				clear 		: both ;
+				margin-right: 15px ;
+				margin-top 	: -104px ;
+				line-height : 28px ;
+				text-shadow : silver 1.2px 1.2px 1.2px ;
+				border-radius : 20px 20px 20px 20px ;
+				-moz-border-radius : 20px 20px 20px 20px ;
+				-webkit-border-radius : 20px 20px 20px 20px ;				
+			}
+			
+			#butVaga {
+				width 		: 300px ;
+				height 		: 100px ;
+				border		: none ;
+				text-shadow : silver 1.2px 1.2px 1.2px ;
+				border-radius : 20px 20px 20px 20px ;
+				-moz-border-radius : 20px 20px 20px 20px ;
+ 			}
+			
+				/* AQUI A CONFIGURAÇÃO PASSA A SER REFERENTE AO RODAPÉ DA PÁGINA */
+			
+			#rodape {
+			
+				width 		: 1022px ;
+				height 		: 137px ;
+				border 		: 1px solid black;
+				color 		: white ;
+				font-size 	: 12px ;
+				text-align 	: center ;
+				line-height	: 140px;
+				margin 		: 0px ;
+				float 		: left ;
+				background-color	: #000000 ;
+			}
+			
+			#face2 {
+				margin-top 	: 10px ;
+				margin-left : 5px ;
+				float 		: left ;
+			}
+			
+			#insta2 {
+				margin-top 	: 10px ;
+				margin-left : 5px ;
+				float 		: left ;
+			}
+			
+			#twi2 {
+				margin-left	: 3px ;
+				margin-top	: 9px; 
+				float 		: left ;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="principal">
+			<div id="logo"></div>
+			
+			<div id="slogan"><u>Inteligência que gera emprego!</u></div>
+			
+			<div id="sociais">
+				<div id="face">
+					<a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="fundo/face1.png"></a>
+				</div>
+				
+				<div id="insta">
+					<a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="fundo/insta1.png"></a>
+				</div>
+				
+				<div id="twi">
+					<a href="https://www.twitter.com" target="_blank" title="Twitter"><img src="fundo/twi1.png"></a>
+				</div>
+			</div>
+			
+			<div id="menu">
+				<ul id="opcoes">
+					<li><a href="index.html">Início</a></li>
+					<li><a href="">Perfil</a></li>
+					<li><a href="">Cadastro</a></li>
+					<li><a href="vagas.html">Vagas</a></li>
+					<li><a href="">Cursos</a></li>
+					<li><a href="">Fale Conosco</a></li>
+				</ul>
+			</div>
+			
+			<div id="conteudo">
+				<div id="titulo1">
+					<h3>Detalhes da Vaga</h3>
+				</div>
+				
+				<div id="titulo2">
+					<h2>ENGENHEIRO</h2> <br> <h3>ConstroMundos</h3>
+				</div>
+				
+				<div id="descricao">
+					<b>REQUISITOS DA VAGA</b>
+					<p> - Área: Construção, Engenheiro Civil; <br>
+						- Nível hierárquico: Encarregado <br>
+						- Formação acadêmica: Ensino Superior; <br>
+						- Veículo Próprio e Categoria B; <br>
+						- VAGAS disponíveis para pessoas com deficiência; <br>
+					</p>
+					<b>ATIVIDADES</b>
+					<p> - Elaborar projetos de engenharia civil,
+						gerenciar obras, controlar a qualidade de empreendimentos.
+						Coordenar a operação e manutenção do empreendimento.
+						Prestar consultoria, assistência e assessoria
+						e elaborar pesquisas tecnológicas;</p>
+					<b>SALÁRIO E DEMAIS INFORMAÇÕES</b>
+					<p> - A combinar; <br>
+						- Período Integral; <br>
+						- Rio de Janeiro - RJ; <br>
+						- Vale-refeição, Vale-transporte; <br> </p>				
+				</div>
+				
+				<div id="foto">
+					<img src="fundo/engenheiro.jpg" alt="Engenheiro" title="Engenheiro">
+				</div>
+				
+				<div id="contatos">
+					Contatos da Empresa: <br>
+					E-mail: constro@mundo.com
+				</div>
+				
+				<div id="queroVaga">
+					<button id="butVaga" type="button" onclick="alert('Inscrição Efetuada! Boa Sorte!')" class="btn btn-orange"><h2>QUERO ESTA <br> VAGA!</button><h2>
+				</div>
+			</div>			
+		
+			<div id="rodape">
+				<div id="face2">			
+					<a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="fundo/face1.png"></a>
+				</div>
+				
+				<div id="insta2">
+					<a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="fundo/insta1.png"></a>
+				</div>
+				
+				<div id="twi2">
+					<a href="https://www.twitter.com" target="_blank" title="Twitter"><img src="fundo/twi1.png"></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>		

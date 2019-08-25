@@ -1,0 +1,773 @@
+<html> <!-- Área de Vagas Equipe SMART WORK; -->
+
+	<head>
+		<title>Smart Work</title>
+		
+		<link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+		
+		<style>
+			/* CSS da página - Estilização */
+			
+			body {
+				margin : 0px ; 
+				background-image:url(fundo/fundo1.jpg) ;
+			}
+			
+				/* CONFIGURAÇÃO DA DIV PRINCIPAL/DIV PAI */
+			
+			#principal {
+				font-family	: Arial ;
+				border 		: 0px ;
+				width 		: 1024px ;
+				height 		: 760px ;
+				margin 		: 0px auto;
+			}
+			
+				/* INICIA-SE AQUI A CONFIGURAÇÃO DO CABEÇALHO */
+			
+			#opcoes { 		
+				list-style 	: none ;
+				padding 	: 0px ;
+				margin 		: 0px;
+				clear 		: both
+			}
+			
+				/* LOGO DO CABEÇALHO */
+			
+			#logo {
+				background:url(fundo/logo2.png) no-repeat ;
+				width  		: 268px ;
+				height 		: 137px ; 
+				float  		: left ;
+				margin 		: 0px;
+			}
+			
+				/* SLOGAN DO CABEÇALHO */
+			
+			#slogan {
+				width  		: 300px ; 
+				height 		: 70px ;
+				color 		: turquoise ;
+				float  		: left ;
+				margin-left	: 40px ;
+				margin-top	: 35px ;
+				text-align	: center;
+				line-height	: 70px;
+				font-family : 'Galada' ;
+				font-size	: 24px ;
+			}
+			
+				/* REDES SOCIAIS DO CABEÇALHO */
+			
+			#sociais {
+				width  		: 230px ; 
+				height 		: 55px ;
+				float  		: right ;
+				margin 		: 0px ;
+				margin-top 	: 10px ;
+				margin-right: 1px ;
+				text-align	: center;
+				line-height	: 40px;
+			}
+			
+			#face {
+				margin-right: 5px ;
+				float 		: left ;
+			}
+			
+			#insta {
+				margin-right: 5px ;
+				float 		: left ;
+			}
+			
+			#twi {
+				margin-left	: -2px ;
+				margin-top	: -1px; 
+				float 		: left ;
+			}
+			
+				/* INICIA-SE AQUI AS CONFIGURAÇÕES GERAIS DO MENU PRINCIPAL DA HOMEPAGE*/
+			
+			#menu li {
+				width  		: 167.5px ; 
+				height 		: 30px ;
+				border 		: 1px solid transparent ;
+				margin-left : 1px ;
+				margin-top 	: 1px ;
+				float 		: left ; 
+				text-align 	: center ;
+				line-height	: 29px;
+				background-color : turquoise ;
+				border-radius : 20px 10px 20px 10px;
+				-moz-border-radius : 20px 10px 20px 10px ;
+				-webkit-border-radius : 20px 10px 20px 10px ;
+				text-shadow : gray 0.5px 0.5px 0.5px ;
+				box-shadow : #008080 0.5px 0.5px 0.5px ;
+			}	
+			
+			#menu {
+				background-color : #000000 ;
+				height 		: 137px ;
+			}
+			
+			#menu a {
+				text-decoration : none ;
+				width  		: 167.5px ; 
+				height 		: 30px ;
+				border-radius : 20px 10px 20px 10px;
+				-moz-border-radius : 20px 10px 20px 10px ;
+				-webkit-border-radius : 20px 10px 20px 10px ;
+				float : left ;
+			}
+			
+			#menu a:link {
+				color : black ;
+				background-color : ;
+			}
+			
+			#menu a:visited {
+				color : #8B0000 ;
+				background-color : ;
+			}
+			
+			#menu a:hover {
+				color : black ;
+				font-size: 18px ;
+				background-color : #48C1CC ;
+			}
+			
+			#menu a:active {
+				color : #00FF7F ;
+				background-color : #006060 ;
+				border : 0px ;
+			}
+			
+				/* ABAIXO ESTÁ A CONFIGURAÇÃO DA DIV REFERENTE AO CONTEÚDO DA PÁGINA */
+			
+			#conteudo {
+				width 		: 1024px ;
+				height		: 770px;
+				margin		: 0px;
+				text-align	: center ;
+				line-height : 240px ; 
+				/* background-color : #957858 ; */
+				background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+				border 		: 0px ;
+			}
+			
+			#conteudo a {
+				width 		: 110px ;
+				height		: 35px ;
+				color		: white ;
+				margin-top 	: -1px ;
+				margin-left : -6px ;
+				line-height : 30px ;
+				float		: left ;
+				text-decoration: none;
+				border-radius : 10px 10px 10px 10px ;
+				-moz-border-radius : 10px 10px 10px 10px ;
+				-webkit-border-radius : 10px 10px 10px 10px ;
+			}
+			
+			#conteudo a:link {
+				color		: white ;
+			}
+			
+			#conteudo a:visited {
+				color		: white ;
+			}
+			
+			#conteudo a:hover {
+				color		: white ;
+			}
+			
+			#conteudo a:active {
+				color		: white ;
+			}
+			
+			#conteudo b {
+				/* color 	: #F0E68C ; */
+				font-size	: 24px ;
+				text-shadow : 1px 1px 1px rgb(5, 57, 246), -1px 1px 1px rgb(5, 57, 246),
+				1px -1px 1px rgb(5, 57, 246), -1px -1px 1px rgb(5, 57, 246);
+			}
+			
+			.btn {
+				font-family	: Arial ;
+				cursor		: pointer ;
+				outline		: none ;
+			}
+			
+			.btn-blue {
+				background	: rgb(5, 57, 246);
+				color 		: white ;
+				box-shadow	: 0 5px 0 rgb(3, 37, 152);
+			}
+			
+			.btn-blue:hover {
+				background	: rgb(3, 37, 152);
+				color 		: white ;
+				box-shadow	: 0 5px 0 rgb(2, 24, 100);
+			}
+			
+			.btn-blue:active {
+				position	: relative ;
+				top			: 5px ;
+				box-shadow	: none ;
+				outline		: none ;
+			}
+			
+			#butDet {
+				width		: 110px ;
+				height		: 30px ;
+				border		: none ;
+				border-radius : 10px 10px 10px 10px ;
+				-moz-border-radius : 10px 10px 10px 10px ;
+				-webkit-border-radius : 10px 10px 10px 10px ;
+				font-size 	: 20px ;
+				margin-top	: 18px ;
+			}
+			
+			/* CONFIGURAÇÃO DA PÁGINA DE VAGAS DO SITE */
+			
+				/* BARRA DE PESQUISA DE VAGAS */
+			
+			#titulo1 {
+				width		:	972px;
+				height		:	18px;
+				float		: left;
+				margin-top 	: 45px;
+				margin-left	: 30px;
+				text-align 	: left ;
+				line-height : 0px ;
+				font-size 	: 20px ;
+				text-shadow : gray 0.5px 0.5px 0px;
+			}
+
+			#pesquisa {
+				width		:	982px;
+				height		:	100px;
+				border		: 2px solid silver ;
+				float		: left;
+				margin-left	: 20px;
+				text-align 	: left ;
+				line-height : 0px ;
+				background-image: linear-gradient(to right, #434343 0%, black 100%);
+				border-radius : 8px 8px 8px 8px ;
+				-moz-border-radius : 8px 8px 8px 8px ;
+				-webkit-border-radius : 8px 8px 8px 8px ;
+			}
+			
+			#interesse {
+				width		:	420px;
+				height		:	50px;
+				border 		: 2px solid silver ;
+				background	: rgba(0, 0, 0, 0.80) ;
+				margin-top	: 25px ;
+				margin-left	: 25px ;
+				float		: left ;
+				line-height : 0px ;				
+			}
+			
+			#inpInt {
+				margin-left : 16px ;
+				margin-top	: 13px ;
+				padding-left: 2px ;
+			}
+			
+			#regiao {
+				width		:	230px;
+				height		:	50px;
+				border 		: 2px solid silver ;
+				background	: rgba(0, 0, 0, 0.80) ;
+				margin-top	: 25px ;
+				margin-left	: 25px; 
+				float		: left ;
+				line-height : 0px ;
+			}
+			
+			input:focus {
+				border : 2px solid rgb(5, 57, 246);
+				outline : none ;
+			}
+			
+			#inpReg {
+				margin-left	: 10px ;
+				margin-top	: 13px ;
+				padding-left: 2px ;
+			}
+			
+			#botao {
+				width		:	200px;
+				height		:	50px;
+				margin-top	: 25px ;
+				margin-left	: 35px; 
+				float		: left ;
+				border-radius : 20px 20px 20px 20px;
+				-moz-border-radius : 20px 20px 20px 20px ;
+				-webkit-border-radius : 20px 20px 20px 20px ;
+				line-height : 0px ;
+			}
+			
+			#butPes {
+				width		:	200px;
+				height		:	50px;
+				border:none;
+				border-radius : 20px 20px 20px 20px;
+				-moz-border-radius : 20px 20px 20px 20px ;
+				-webkit-border-radius : 20px 20px 20px 20px ;
+				font-size 	: 24px ;
+			}
+			
+				/*	VAGAS RECENTES DO SITE */
+			
+				/* TÍTULO - VAGAS RECENTES */
+			
+			#titulo2 {
+				width		:	972px;
+				height		:	30px;
+				float		: left;
+				margin 		: 0px ;
+				margin-left	: 30px;
+				margin-top	: 15px; 
+				text-align 	: left ;
+				font-size 	: 20px;
+				line-height : 80px ;
+				text-align 	: left ;
+				text-shadow : gray 0.5px 0.5px 0px;
+			}
+			
+				/*	VAGA 1 - SUPERIOR ESQUERDA */
+			
+			#vaga1 {
+				width 		: 395px;
+				height 		: 135px ;
+				border 		: 2px solid gray ;
+				background-image: linear-gradient(to right, #434343 0%, black 100%);
+				color		: white ;
+				float		: left ;
+				margin-left : 20px;
+				margin-top 	: 30px ;	
+				text-align 	: left ;
+				line-height : 25px ;
+				font-size 	: 20px ;
+				padding-left: 5px;
+				padding-top : 5px ;
+				text-shadow : 1px 1px 1px black, -1px 1px 1px black,
+				1px -1px 1px black, -1px -1px 1px black;
+				border-radius : 8px 8px 8px 8px ;
+				-moz-border-radius : 8px 8px 8px 8px ;
+				-webkit-border-radius : 8px 8px 8px 8px ;
+			}
+			
+			#bot1 {
+				width 		: 110px ;
+				height 		: 30px ;
+				float 		: right ;
+				margin-top 	: 20px ;
+				margin-right: 20px;
+				text-align 	: center ;
+				line-height : 29px;
+				font-size 	: 20px ;
+				border-radius : 10px 10px 10px 10px ;
+				-moz-border-radius : 10px 10px 10px 10px ;
+				-webkit-border-radius : 10px 10px 10px 10px ;
+			}
+			
+				/*	VAGA 2 - CENTRO ESQUERDA */
+			
+			#vaga2 {
+				width 		: 395px;
+				height 		: 135px ;
+				border 		: 2px solid gray ;
+				background-image: linear-gradient(to right, #434343 0%, black 100%);
+				color		: white ;
+				float		: left ;
+				margin-left : 20px;
+				margin-top 	: 30px ;	
+				text-align 	: left ;
+				line-height : 25px ;
+				font-size 	: 20px ;
+				padding-left: 5px;
+				padding-top : 5px ;
+				text-shadow : 1px 1px 1px black, -1px 1px 1px black,
+				1px -1px 1px black, -1px -1px 1px black;
+				border-radius : 8px 8px 8px 8px ;
+				-moz-border-radius : 8px 8px 8px 8px ;
+				-webkit-border-radius : 8px 8px 8px 8px ;
+				clear 		: both ;
+				
+			}
+			
+			#bot2 {
+				width 		: 110px ;
+				height 		: 30px ;
+				float 		: right ;
+				margin-top 	: 20px ;
+				margin-right: 20px;
+				text-align 	: center ;
+				line-height : 29px;
+				font-size 	: 20px ;
+				border-radius : 10px 10px 10px 10px ;
+				-moz-border-radius : 10px 10px 10px 10px ;
+				-webkit-border-radius : 10px 10px 10px 10px ;
+			}
+			
+				/*	VAGA 3 - INFERIOR ESQUERDA */
+			
+			#vaga3 {
+				width 		: 395px;
+				height 		: 135px ;
+				border 		: 2px solid gray ;
+				background-image: linear-gradient(to right, #434343 0%, black 100%);
+				color		: white ;
+				float		: left ;
+				margin-left : 20px;
+				margin-top 	: 30px ;	
+				text-align 	: left ;
+				line-height : 25px ;
+				font-size 	: 20px ;
+				padding-left: 5px;
+				padding-top : 5px ;
+				text-shadow : 1px 1px 1px black, -1px 1px 1px black,
+				1px -1px 1px black, -1px -1px 1px black;
+				border-radius : 8px 8px 8px 8px ;
+				-moz-border-radius : 8px 8px 8px 8px ;
+				-webkit-border-radius : 8px 8px 8px 8px ;
+				clear 		: both ;
+				
+			}
+			
+			#bot3 {
+				width 		: 110px ;
+				height 		: 30px ;
+				float 		: right ;
+				margin-top 	: 20px ;
+				margin-right: 20px;
+				text-align 	: center ;
+				line-height : 29px;
+				font-size	: 20px ;
+				border-radius : 10px 10px 10px 10px ;
+				-moz-border-radius : 10px 10px 10px 10px ;
+				-webkit-border-radius : 10px 10px 10px 10px ;
+			}
+			
+				/*	VAGA 4 - SUPERIOR DIREITA */
+			
+			#vaga4 {
+				width 		: 395px;
+				height 		: 135px ;
+				border 		: 2px solid gray ;
+				background-image: linear-gradient(to right, #434343 0%, black 100%);
+				color		: white ;
+				float		: right ;
+				margin-right: 20px;
+				margin-top 	: -492px ;	
+				text-align 	: left ;
+				line-height : 25px ;
+				font-size 	: 20px ;
+				padding-left: 5px;
+				padding-top : 5px ;
+				text-shadow : 1px 1px 1px black, -1px 1px 1px black,
+				1px -1px 1px black, -1px -1px 1px black;
+				border-radius : 8px 8px 8px 8px ;
+				-moz-border-radius : 8px 8px 8px 8px ;
+				-webkit-border-radius : 8px 8px 8px 8px ;
+				clear 		: both ;
+			}
+			
+			#bot4 {
+				width 		: 110px ;
+				height 		: 30px ;
+				float 		: right ;
+				margin-top 	: 20px ;
+				margin-right: 20px;
+				text-align 	: center ;
+				line-height : 29px;
+				font-size 	: 20px ;
+				border-radius : 10px 10px 10px 10px ;
+				-moz-border-radius : 10px 10px 10px 10px ;
+				-webkit-border-radius : 10px 10px 10px 10px ;
+			}
+			
+				/*	VAGA 5 - CENTRO DIREITA DIREITA */
+			
+			#vaga5 {
+				width 		: 395px;
+				height 		: 135px ;
+				border 		: 2px solid gray ;
+				background-image: linear-gradient(to right, #434343 0%, black 100%);
+				color		: white ;
+				float		: right ;
+				margin-right: 20px;
+				margin-top 	: -318px ;	
+				text-align 	: left ;
+				line-height : 25px ;
+				font-size 	: 20px ;
+				padding-left: 5px;
+				padding-top : 5px ;
+				text-shadow : 1px 1px 1px black, -1px 1px 1px black,
+				1px -1px 1px black, -1px -1px 1px black;
+				border-radius : 8px 8px 8px 8px ;
+				-moz-border-radius : 8px 8px 8px 8px ;
+				-webkit-border-radius : 8px 8px 8px 8px ;
+				clear 		: both ;
+			}
+			
+			#bot5 {
+				width 		: 110px ;
+				height 		: 30px ;
+				float 		: right ;
+				margin-top 	: 20px ;
+				margin-right: 20px;
+				text-align 	: center ;
+				line-height : 29px;
+				font-size 	: 20px ;
+				border-radius : 10px 10px 10px 10px ;
+				-moz-border-radius : 10px 10px 10px 10px ;
+				-webkit-border-radius : 10px 10px 10px 10px ;
+			}
+			
+				/*	VAGA 6 - INFERIOR DIREITA */
+			
+			#vaga6 {
+				width 		: 395px;
+				height 		: 135px ;
+				border 		: 2px solid gray ;
+				background-image: linear-gradient(to right, #434343 0%, black 100%);
+				color		: white ;
+				float		: right ;
+				margin-right: 20px;
+				margin-top 	: -144px ;	
+				text-align 	: left ;
+				line-height : 25px ;
+				font-size 	: 20px ;
+				padding-left: 5px;
+				padding-top : 5px ;
+				text-shadow : 1px 1px 1px black, -1px 1px 1px black,
+				1px -1px 1px black, -1px -1px 1px black;
+				border-radius : 8px 8px 8px 8px ;
+				-moz-border-radius : 8px 8px 8px 8px ;
+				-webkit-border-radius : 8px 8px 8px 8px ;
+				clear 		: both ;
+			}
+			
+			#bot6 {
+				width 		: 110px ;
+				height 		: 30px ;
+				float 		: right ;
+				margin-top 	: 20px ;
+				margin-right: 20px;
+				text-align 	: center ;
+				line-height : 29px;
+				font-size 	: 20px ;
+				border-radius : 10px 10px 10px 10px ;
+				-moz-border-radius : 10px 10px 10px 10px ;
+				-webkit-border-radius : 10px 10px 10px 10px ;
+			}
+			
+				/* AQUI A CONFIGURAÇÃO PASSA A SER REFERENTE AO RODAPÉ DA PÁGINA */
+			
+			#rodape {
+			
+				width 		: 1022px ;
+				height 		: 137px ;
+				border 		: 1px solid black;
+				color 		: white ;
+				font-size 	: 12px ;
+				text-align 	: center ;
+				line-height	: 140px;
+				margin 		: 0px ;
+				float 		: left ;
+				background-color	: #000000 ;
+			}
+			
+			#face2 {
+				margin-top 	: 10px ;
+				margin-left : 5px ;
+				float 		: left ;
+			}
+			
+			#insta2 {
+				margin-top 	: 10px ;
+				margin-left : 5px ;
+				float 		: left ;
+			}
+			
+			#twi2 {
+				margin-left	: 3px ;
+				margin-top	: 9px; 
+				float 		: left ;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="principal">
+			<div id="logo"></div>
+			
+			<div id="slogan"><u>Inteligência que gera emprego!</u></div>
+			
+			<div id="sociais">
+				<div id="face">
+					<a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="fundo/face1.png"></a>
+				</div>
+				
+				<div id="insta">
+					<a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="fundo/insta1.png"></a>
+				</div>
+				
+				<div id="twi">
+					<a href="https://www.twitter.com" target="_blank" title="Twitter"><img src="fundo/twi1.png"></a>
+				</div>
+			</div>
+			
+			<div id="menu">
+				<ul id="opcoes">
+					<li><a href="index.html">Início</a></li>
+					<li><a href="">Perfil</a></li>
+					<li><a href="">Cadastro</a></li>
+					<li><a href="vagas.html">Vagas</a></li>
+					<li><a href="">Cursos</a></li>
+					<li><a href="">Fale Conosco</a></li>
+				</ul>
+			</div>
+			
+			<div id="conteudo">
+				<div id="titulo1">Pesquise por vagas</div>
+				
+				<div id="pesquisa">
+					<form 	action="buscavagas.php"
+							id="formVagas">
+						<div id="interesse">
+							<input id="inpInt"
+								type="text"
+								name="interesse"
+								maxlength="40"
+								size="50"
+								required
+								placeholder="Digite sua vaga de interesse"
+								list="listaVagas">
+							<datalist id="listaVagas">
+								<option value="Programador"></option>
+								<option value="Engenheiro"></option>
+								<option value="Enfermeiro"></option>
+								<option value="Segurança"></option>
+								<option value="Cozinheiro"></option>
+								<option value="Professor de Dança"></option>
+							</datalist>
+						</div>
+						
+						<div id="regiao">
+							<input id="inpReg"
+								type="text"
+								name="interesse"
+								maxlength="40"
+								size="25"
+								placeholder="Digite a região"
+								list="listaRegiao">
+							<datalist id="listaRegiao">
+								<option value="São Paulo"></option>
+								<option value="Paraná"></option>
+								<option value="Rio de Janeiro"></option>
+							</datalist>
+							</div>
+						
+						<div id="botao">
+							<button id="butPes" class="btn btn-blue" type="button">Pesquisar</button>
+						</div>
+					</form>
+				</div>
+				
+				<div id="titulo2">Vagas Recentes</div>
+				
+				<div id="vaga1">
+					<b>Programador</b> <br>
+					Surreal Sites Ltda. <br>
+					Lançada em: 14/05/19
+					<div id="bot1">
+						<button id="butDet"
+								class="btn btn-blue"
+								type="button"><a href="vaga-programador.html">Detalhes</a>
+						</button>
+					</div>
+				</div>
+				
+				<div id="vaga2">
+					<b>Engenheiro</b> <br>
+					ConstroMundos <br>
+					Lançada em: 09/04/19
+					<div id="bot2">
+						<button id="butDet"
+								class="btn btn-blue"
+								type="button"><a href="vaga-engenheiro.html">Detalhes</a>
+						</button>
+					</div>
+				</div>
+				
+				<div id="vaga3">
+					<b>Enfermeiro</b> <br>
+					Hospital Umbrella Corp. <br>
+					Lançada em: 06/05/19
+					<div id="bot3">
+						<button id="butDet"
+								class="btn btn-blue"
+								type="button"><a href="vaga-enfermeiro.html">Detalhes</a>
+						</button>
+					</div>
+				</div>
+				
+				<div id="vaga4">
+					<b>Segurança</b> <br>
+					Vigilância Extreme Ltda. <br>
+					Lançada em: 10/05/19
+					<div id="bot4">
+						<button id="butDet"
+								class="btn btn-blue"
+								type="button"><a href="vaga-seguranca.html">Detalhes</a>
+						</button>
+					</div>
+				</div>
+				
+				<div id="vaga5">
+					<b>Cozinheiro</b> <br>
+					Restaurante Gostoso Pra Dedeu <br>
+					Lançada em: 18/05/19
+					<div id="bot5">
+						<button id="butDet" 
+								class="btn btn-blue" 
+								type="button"><a href="vaga-cozinheiro.html">Detalhes</a>
+						</button>
+					</div>
+				</div>
+				
+				<div id="vaga6">
+					<b>Professor de Dança</b> <br>
+					Dança Mucho Viagens <br>
+					Lançada em: 20/05/19
+					<div id="bot6">
+						<button id="butDet"
+								class="btn btn-blue"
+								type="button"><a href="vaga-dancarino.html">Detalhes</a>
+						</button>
+					</div>
+				</div>
+			</div>			
+		
+			<div id="rodape">
+				<div id="face2">			
+					<a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="fundo/face1.png"></a>
+				</div>
+				
+				<div id="insta2">
+					<a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="fundo/insta1.png"></a>
+				</div>
+				
+				<div id="twi2">
+					<a href="https://www.twitter.com" target="_blank" title="Twitter"><img src="fundo/twi1.png"></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>		
