@@ -12,8 +12,14 @@ Algumas considerações a fazer sobre este projeto:
   
 # Smart Work
 
-O projeto de nome fictício Smart Work foi um trabalho para a disciplina de __Aplicações para Internet__ do curso superior em Análise e Desenvolvimento de Sistemas no primeiro semestre de 2019 pela Universidade Cidade de São Paulo (UNICID).
+O projeto de nome fictício Smart Work foi um trabalho para a disciplina de __Aplicações para Internet__, do curso superior em Análise e Desenvolvimento de Sistemas no 1º semestre de 2019 pela Universidade Cidade de São Paulo (UNICID).
 
 A proposta era desenvolver um site de vagas de emprego fictício, que apresentasse toda a estrutura comumente usada em sites desse gênero, como página de vagas, cadastro, perfil do candidato, cursos e fale conosco.
 
-O desenvolvimento do projeto contou com diversas etapas, como pesquisa, desenvolvimento dos wireframes, escolha das imagens em bancos de imagens sem direitos autorais (como Pixabay, por exemplo), utilização de softwares como Adobe Photoshop, Pencil Project, Notepad++, Sublime Text, escolha e estudo das cores, tudo isso documentado dentro de um arquivo Word constantemente atualizado.
+O desenvolvimento do projeto contou com diversas etapas como pesquisa, desenvolvimento dos wireframes, escolha de imagens sem direitos autorais (em sites como Pixabay, por exemplo), escolha e estudo das cores, além de outras etapas, tudo isso documentado dentro de um DDP - Documento de Descrição do Projeto - constantemente atualizado. 
+
+__Softwares utilizados__ 
+  - Adobe Photoshop
+  - Pencil Project
+  - Notepad++
+  - Sublime Text 
