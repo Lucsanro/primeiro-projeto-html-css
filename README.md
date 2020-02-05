@@ -2,10 +2,10 @@
 
 Algumas considerações a fazer sobre este projeto:
 
-  - É minha primeira experiência com a linguagem de marcação HTML5 e com CSS3, sendo também a primeira experiência com qualquer linguagem;
+  - É minha primeira experiência com a linguagem de marcação HTML5 e com CSS3;
   - O projeto foi desenvolvido em grupo, portanto, estão disponíveis aqui somente as páginas que tive participação direta;
   - Não tem arquivos .ccs. Toda estilização foi feita dentro da tag <style>, o que aumentou significativamente o tamanho do código, pois todos os arquivos .html tem a mesma formatação dentro da tag <style>;
-  - Não tem JavaScript. Por ser um trabalho de faculdade, desenvolvemos o código conforme o avanço das aulas, e não foi possível dentro do semestre estudado introduzir a linguagem JavaScript;
+  - Não tem Javascript. Por ser um trabalho de faculdade, desenvolvemos o código conforme o avanço das aulas, e não foi possível dentro do semestre estudado introduzir a linguagem Javascript;
   - Não será atualizado. Como um trabalho de faculdade já concluído, não tenho intenções de fazer alterações nele. Serve apenas como referência de aprendizado e para demonstrar minha evolução dentro das linguagens apresentadas em projetos futuros.
   
 # Smart Work
