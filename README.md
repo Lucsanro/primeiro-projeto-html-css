@@ -1,4 +1,4 @@
-![](/site-smart-work/fundo/smart.png)
+![](/site-smart-work/fundo/smart1.png)
 
 # Site de Vagas de Emprego Fictício
 
